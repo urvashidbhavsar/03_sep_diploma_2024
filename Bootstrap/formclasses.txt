@@ -1,0 +1,20 @@
+1. input type - text, password, email, number, date, datetime-local, file, week, month, time etc. and textarea => form-control 
+
+2. for label => form-label 
+
+3. for input type = radio and checkbox 
+    parent => form-check (vertical), form-check-inline (horizontal)
+    input -> form-check-input 
+    input's label => form-check-label
+
+4. for dropdown => form-select
+
+5. for color => form-control, form-control-color
+
+6. for range => form-range
+
+7. for input-group design =>
+    parent - input-group 
+    inputs = forms classes
+    label/button/dropdown => input-group-text
+

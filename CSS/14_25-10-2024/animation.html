@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 50px;
+            width: 50px;
+            background-color: rgb(205, 113, 47);
+            border-bottom-left-radius: 150px;
+            transform-origin: 100% 0%;
+            margin: 140px auto;
+            animation: beak 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes beak {
+            0% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(-90deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv"></div>
+</body>
+
+</html>

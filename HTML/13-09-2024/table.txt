@@ -1,0 +1,30 @@
+table is a collection of rows and columns.
+cell is box, which is generated from row and column
+
+1. for create table =>  <table>
+
+2. for create table row => <tr>
+
+3. for set table data => <td>
+
+4. for set table heading => <th>
+
+5. cellpadding is used for apply space in cell. or give a space between cell border or cell text.
+
+6. cellspacing apply space between cells.
+
+7. rules used for remove cell space.
+
+8.  for set table body = <tbody>
+9. for set table head = <thead>
+10. for set table footer = <tfoot>
+
+11. for set table title = <caption>
+
+12. for merge cell used rowspan and colspan attribute.
+
+13. both attribute are apply in <td> or <th> tag.
+
+14. colspan = when it use remove cell from that effected row.
+
+15. rowspan = when it use remove cells from next row.

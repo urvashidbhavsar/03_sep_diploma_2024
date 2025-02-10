@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <section class="" style="background-color: #097009;">
+        <div class="container py-2">
+            <div class="row g-2 text-white text-center justify-content-center">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <a href="" class="text-white text-decoration-none" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" data-bs-title="contact on this number">
+                        <i class="bi bi-telephone"></i> + 1235 2355 98
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <a href="" class="text-white text-decoration-none" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" data-bs-title="For any Query">
+                        <i class="bi bi-send"></i> abc@gmail.com
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-5">
+                    3-5 Business days delivery & Free Returns
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header class="position-sticky top-0">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h4 class="text-uppercase">vegfoods</h4>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#home_header"
+                    aria-controls="home_header" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-three-dots-vertical"></i>
+                </button>
+                <div class="collapse justify-content-end navbar-collapse" id="home_header">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 text-uppercase fw-medium gap-2 gap-lg-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Shop</a></li>
+                                <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">single product</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">cart</a></li>
+                                <li><a class="dropdown-item" href="#">checkout</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                <i class="bi bi-cart-check-fill"></i>
+                                <span>[0]</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="homesection">
+        <div id="home_slider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <div class="slider slider1 text-center">
+                        <div class="display-1 text-capitalize text-white">100% fresh & organic foods</div>
+                        <p class="text-white text-uppercase py-2" style="letter-spacing: 2px;">we deliver organic
+                            vegetables & fruits</p>
+                        <button class="btn btn-success rounded-pill">View Details</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="slider slider2 text-center">
+                        <div class="display-1 text-capitalize text-white">100% fresh & organic foods</div>
+                        <p class="text-white text-uppercase py-2" style="letter-spacing: 2px;">we deliver organic
+                            vegetables & fruits</p>
+                        <button class="btn btn-success rounded-pill">View Details</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slider slider3 text-center" data-bs-interval="5000">
+                        <div class="display-1 text-capitalize text-white">100% fresh & organic foods</div>
+                        <p class="text-white text-uppercase py-2" style="letter-spacing: 2px;">we deliver organic
+                            vegetables & fruits</p>
+                        <button class="btn btn-success rounded-pill">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#home_slider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#home_slider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="cartModalLabel">Your Cart</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://media.istockphoto.com/id/1542614865/photo/man-shopping-vegetables-in-groceries-store.jpg?s=1024x1024&w=is&k=20&c=GrlyoGq9JtmJvq6ESmbzvYssDmlj6TGtgbENuTE2PnM="
+                        class="img-fluid" />
+                    <br> <br>
+                    <img src="https://images.unsplash.com/photo-1612884133038-b1f2b8e87980?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="img-fluid" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Checkout</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Back to Shop</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

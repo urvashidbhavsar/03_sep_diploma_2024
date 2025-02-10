@@ -1,0 +1,33 @@
+.navbar-toggler {
+    border-radius: 0;
+    border-width: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.slider1 {
+    background: url(https://images.unsplash.com/photo-1612884133038-b1f2b8e87980?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center / cover rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+}
+
+.slider2 {
+    background: url(https://images.unsplash.com/photo-1712164909622-5012e1d1c64a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center / cover rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+}
+
+.slider3 {
+    background: url(https://media.istockphoto.com/id/1542614865/photo/man-shopping-vegetables-in-groceries-store.jpg?s=1024x1024&w=is&k=20&c=GrlyoGq9JtmJvq6ESmbzvYssDmlj6TGtgbENuTE2PnM=) center / cover rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+}
+
+.slider {
+    padding: 180px 0;
+}
+
+@media (max-width:576px) {
+    .slider {
+        padding: 100px 0;
+    }
+}

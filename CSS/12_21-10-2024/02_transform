@@ -1,0 +1,18 @@
+1. rotate  = also has property
+    rotate(),rotateX(), rotateY(), rotateZ(), rotate3d()
+    
+2. scale = zoom effect
+    scale(),scaleX(), scaleY(), scaleZ(), scale3d()
+
+3. skew = rotate and zoom 
+    skew(), skewX(), skewY()
+
+4. translate = move effect
+    translate(),translateX(), translateY(), translateZ(), translate3d()
+
+5. perspective = view 
+
+6. matrix 
+    matrix(), matrixed()
+
+https://ramlmn.github.io/visualizing-matrix3d/

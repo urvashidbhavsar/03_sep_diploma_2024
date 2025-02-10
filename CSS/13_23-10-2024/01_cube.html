@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .setdiv {
+            height: 200px;
+            width: 200px;
+            margin: 150px auto;
+        }
+
+        .cube {
+            height: 200px;
+            width: 200px;
+            position: relative;
+            transform: translateZ(-100px);
+            perspective: 1000px;
+            perspective-origin: -300% 300%;
+            transform-style: preserve-3d;
+        }
+
+        .cubesides {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            display: grid;
+            place-items: center;
+            font-size: 40px;
+        }
+
+        .front {
+            transform: rotate(0deg) translateZ(100px);
+            background-color: rgba(255, 0, 255, 0.7);
+        }
+
+        .back {
+            transform: rotate(0deg) translateZ(-100px);
+            background-color: rgba(0, 55, 255, 0.7);
+        }
+
+        .left {
+            transform: rotateY(90deg) translateZ(-100px);
+            background-color: rgba(255, 153, 0, 0.7);
+        }
+
+        .right {
+            transform: rotateY(-90deg) translateZ(-100px);
+            background-color: rgba(0, 255, 0, 0.7);
+        }
+
+        .top {
+            transform: rotateX(-90deg) translateZ(-100px);
+            background-color: rgba(89, 0, 255, 0.7);
+        }
+
+        .bottom {
+            transform: rotateX(90deg) translateZ(-100px);
+            background-color: rgba(0, 221, 255, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="setdiv">
+        <div class="cube">
+            <div class="cubesides front">Front</div>
+            <div class="cubesides back">Back</div>
+            <div class="cubesides top">Top</div>
+            <div class="cubesides bottom">Bottom</div>
+            <div class="cubesides left">Left</div>
+            <div class="cubesides right">Right</div>
+        </div>
+    </div>
+</body>
+
+</html>

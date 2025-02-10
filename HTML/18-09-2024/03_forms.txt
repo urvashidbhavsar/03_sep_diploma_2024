@@ -1,0 +1,21 @@
+there is main 4 elements of html forms.
+
+1. form 
+2. input 
+3. textarea
+4. select-option
+
+5. datalist
+6. label 
+
+input types = 
+text, password, number, tel, radio, checkbox, button, submit, reset, image etc
+new => color, date, datetime-local, week, month, time, range, search, url etc..
+
+in form tag,
+action = write a page name which open after click on submit button, if cant set #.
+
+method = get and post 
+
+get = get all field information and display in URL.
+post = wrap all data and load on next page.

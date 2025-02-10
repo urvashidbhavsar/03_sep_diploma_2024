@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .gridex {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .feactures {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding-top: 40px;
+        }
+
+        .feat {
+            padding: 30px;
+            background-color: #f6ecec;
+            transition: .5s all;
+        }
+
+        .feat:hover {
+            background-color: white;
+            box-shadow: 0 0 10px #d3d3d3;
+        }
+
+        .feat i {
+            color: red;
+            font-size: 40px;
+        }
+
+        .feat h3 {
+            padding: 10px 0;
+            font-size: 23px;
+        }
+
+        .feat h3 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .feat h3 a:hover {
+            color: red;
+        }
+
+        .feat p {
+            color: #5e5e5e;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="gridex">
+        <!-- parent - grid -->
+        <div class="feactures">
+            <div class="feat">
+                <i class="fa-solid fa-briefcase"></i>
+                <h3><a href="">Market Research</a></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae optio explicabo corrupti.
+                </p>
+            </div>
+            <div class="feat">
+                <i class="fa-brands fa-usps"></i>
+                <h3><a href="">Startup Business</a></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae optio explicabo corrupti.
+                </p>
+            </div>
+            <div class="feat">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3><a href="">Business Growth</a></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae optio explicabo corrupti.
+                </p>
+            </div>
+            <div class="feat">
+                <i class="fa-solid fa-chart-pie"></i>
+                <h3><a href="">Consultancy</a></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae optio explicabo corrupti.
+                </p>
+            </div>
+            <div class="feat">
+                <i class="fa-solid fa-piggy-bank"></i>
+                <h3><a href="">Financial Advices</a></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae optio explicabo corrupti.
+                </p>
+            </div>
+            <div class="feat">
+                <i class="fa-regular fa-copy"></i>
+                <h3><a href="">Tax Strategy</a></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae optio explicabo corrupti.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

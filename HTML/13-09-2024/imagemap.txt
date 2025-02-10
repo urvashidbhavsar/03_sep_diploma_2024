@@ -1,0 +1,7 @@
+image map is used for set link on image shape.
+
+tag used :
+
+<map> and <area>
+
+shapes : rectangle, polygon and circle.

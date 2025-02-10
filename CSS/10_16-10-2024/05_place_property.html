@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            height: 500px;
+            width: 500px;
+            border: 2px solid black;
+            margin: auto;
+
+            display: grid;
+            /* align-content justify-content */
+            /* place-content: end end; */
+
+            /* align-items justify-items */
+            /* place-items: center; */
+        }
+
+        .child {
+            height: 100px;
+            width: 100px;
+            background-color: coral;
+
+            /* align-self justify-self */
+            place-self: end center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+
+</html>

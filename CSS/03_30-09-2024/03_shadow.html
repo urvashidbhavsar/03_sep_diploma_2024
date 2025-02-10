@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1 {
+            font-family: sans-serif;
+            font-weight: 900;
+            font-size: 60px;
+
+            /* x-offset, y-offset, blur, color */
+            text-shadow: 0px 0px 40px red;
+            color: white;
+
+            -webkit-text-stroke: 1px red;
+            /* -webkit-text-stroke-width: 1px; */
+            /* -webkit-text-stroke-color: red; */
+        }
+
+        div {
+            height: 300px;
+            width: 300px;
+
+            /* x-offset, y-offset, blur, spread, color */
+            /* box-shadow: 0px 0px 11px 11px blue; */
+            box-shadow: inset 0px 0px 40px 11px blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- shadow effect = text, box-->
+
+    <p class="p1">Hello world</p>
+
+    <div></div>
+</body>
+
+</html>

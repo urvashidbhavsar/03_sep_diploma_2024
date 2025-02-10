@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list1 {
+            list-style-type: none;
+            background-color: chocolate;
+        }
+
+        .list1 li {
+            /* when we set inline it cant effected on element height and width only set element in a row. */
+            display: inline;
+            padding: 10px;
+            background-color: rosybrown;
+            height: 200px;
+        }
+
+        .list2 {
+            list-style-type: none;
+            background-color: royalblue;
+        }
+
+        .list2 li {
+            /* it effected on element height and width or set element in a row */
+            display: inline-block;
+            padding: 10px;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="list1">
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+
+    <ul class="list2">
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+</body>
+
+</html>

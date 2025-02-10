@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f4c59b;
+        }
+
+        .setdiv {
+            height: 200px;
+            width: 200px;
+            margin: 170px auto;
+            position: relative;
+        }
+
+        .out-1 {
+            height: 200px;
+            width: 200px;
+            border-radius: 150px 0 0 150px;
+            background: linear-gradient(to right, #490c0c 50%, transparent 50%);
+            animation: out-1 1s ease infinite;
+        }
+
+        .white {
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            height: 150px;
+            width: 150px;
+            border-radius: 150px 0 0 150px;
+            background: linear-gradient(to right, white 50%, transparent 50%);
+            animation: white 1s ease infinite;
+        }
+
+        .eye {
+            height: 30px;
+            width: 30px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 66px;
+            left: 66px;
+            animation: eye .5s ease-in-out infinite alternate;
+        }
+
+        .yellow {
+            height: 75px;
+            width: 75px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            background-color: rgb(230, 221, 50);
+            border-bottom-right-radius: 150px;
+            transform-origin: 0% 0%;
+            animation: yellow .5s ease-in-out .5s infinite alternate;
+        }
+
+        .beak {
+            height: 50px;
+            width: 50px;
+            background-color: rgb(205, 113, 47);
+            border-bottom-left-radius: 150px;
+            transform-origin: 100% 0%;
+            animation: beak .5s ease-in-out .5s infinite alternate;
+            position: absolute;
+            top: 102px;
+            left: 48px;
+            z-index: -1;
+        }
+
+        .gray {
+            height: 75px;
+            width: 75px;
+            position: absolute;
+            top: 100px;
+            left: 25px;
+            background-color: rgb(146, 143, 140);
+            border-bottom-left-radius: 150px;
+            transform-origin: 100% 0%;
+            animation: grayshade .5s ease-in-out  infinite alternate;
+            z-index:2;
+        }
+
+        /* create animation */
+        @keyframes out-1 {
+            0% {
+                rotate: 0;
+            }
+
+            50% {
+                rotate: 180deg;
+            }
+
+            100% {
+                rotate: 360deg;
+            }
+        }
+
+        @keyframes white {
+            0% {
+                rotate: 0;
+            }
+
+            50% {
+                rotate: -180deg;
+            }
+
+            100% {
+                rotate: -360deg;
+            }
+        }
+
+        @keyframes eye {
+            0% {
+                left: 66px;
+            }
+
+            100% {
+                left: 103px;
+            }
+        }
+
+        @keyframes yellow {
+
+            0%
+             {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(270deg);
+            }
+
+        }
+
+        @keyframes beak {
+            0% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(-90deg);
+            }
+        }
+
+        @keyframes grayshade {
+           0%, 100% {
+                transform: rotate(0);
+                opacity: 0;
+            }
+            25%{
+                opacity: .5;
+                
+            }
+
+            100% {
+                transform: rotate(-90deg);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="setdiv">
+        <div class="out-1"></div>
+        <div class="gray"></div>
+        <div class="white"></div>
+        <div class="eye"></div>
+        <div class="beak"></div>
+        <div class="yellow"></div>
+    </div>
+</body>
+
+</html>

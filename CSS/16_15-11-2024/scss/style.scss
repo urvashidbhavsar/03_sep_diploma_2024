@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+// nesting
+.list {
+    background-color: saddlebrown;
+    padding: 20px;
+
+    .menu {
+        display: flex;
+        gap: 20px;
+
+        li {
+            padding: 10px;
+
+            a {
+                color: white;
+                /* font-size: 25px; */
+            }
+        }
+    }
+
+    .mydiv {
+        background-color: aqua;
+    }
+}
+
+.newlist {
+    bottom: auto;
+}

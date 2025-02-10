@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            /* 50% = circle after at 30% = x-offset. 30% = y-offset */
+            /* clip-path: circle(25% at 50% 50%); */
+
+            /* 18% = x-inc, y-inc at 50% = x-offset. 30% = y-offset */
+            /* clip-path: ellipse(18% 45% at 50% 50%); */
+
+            clip-path: polygon(0% 100%, 50% 0%, 100% 100%, 0% 0%, 50% 100%, 100% 0%);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://cdn.pixabay.com/photo/2024/01/02/14/58/leaf-8483401_640.jpg" alt="">
+</body>
+
+</html>

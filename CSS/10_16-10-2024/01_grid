@@ -1,0 +1,27 @@
+display grid 
+
+grid shows you a table type UI.
+
+following property are used when apply grid 
+
+1. grid-template-rows  (parent)
+2. grid-template-columns (parent)
+3. grid-row (child)
+4. grid-row-start (child)
+5. grid-row-end (child)
+6. grid-column (child)
+7. grid-column-start (child)
+8. grid-column-end  (child)
+9. gap (parent)
+10. row-gap (parent)
+11. column-gap (parent)
+12. justify-content (parent)
+13. justify-items (parent)
+14. justify-self 
+15. align-content (parent)
+16. align-items(parent)
+17. align-self 
+18. grid-area 
+19. grid-template-area 
+20. place property
+

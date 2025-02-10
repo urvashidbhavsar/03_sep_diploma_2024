@@ -1,0 +1,7 @@
+how to show / where show your element.
+how to set position in area.
+
+static (default), fixed, sticky, relative, absolute
+
+-> these property are only effected when apply position.
+top, left, right, bottom and z-index.

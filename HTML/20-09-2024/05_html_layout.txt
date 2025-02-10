@@ -1,0 +1,19 @@
+2 type of tag :
+
+1. sementic tag :
+    it tell about it self.
+
+2. non-sementic tag : 
+    which cant tell about it self 
+    <div> and <span>
+
+for create layout used :
+
+<main>
+<nav>
+<section>
+<header>
+<footer>
+<div>
+<aside>
+<article>
