@@ -1,0 +1,1 @@
+document.write("Execute external file")
