@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            border: 1px solid red;
+            width: fit-content;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let time = 10
+
+        // now currently timing is 10 o'clock
+
+        // old method
+        document.write("<div class='mydiv'>Now currently timing is " + time + " o'clock.</div>")
+
+        // new method
+        document.write(`<div class="mydiv">Now currently timing is ${time} o'clock.</div>`)
+    </script>
+</body>
+
+</html>
