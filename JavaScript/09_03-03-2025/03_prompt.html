@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="userprompt()">click to input</button>
+    <script>
+        function userprompt() {
+            let input = prompt("Enter your name")
+            if (input == "") {
+                alert("First, Enter your name")
+            } else {
+                document.write(`<h1>${input}</h1>`)
+            }
+        }
+    </script>
+</body>
+
+</html>
