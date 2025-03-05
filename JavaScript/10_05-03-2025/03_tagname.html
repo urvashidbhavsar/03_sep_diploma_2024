@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            gap: 10px;
+        }
+
+        p {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="FillColor()">click to fill</button>
+    <div class="main">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <script>
+        function FillColor() {
+            let b = document.getElementsByTagName("p")
+            for (let i = 0; i < b.length; i++) {
+                b[i].style.backgroundColor = "#dc12aa"
+            }
+        }
+    </script>
+</body>
+
+</html>
