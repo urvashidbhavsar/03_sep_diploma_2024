@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="setimg()">Set</button>
+    <button onclick="removeimg()">Remove</button>
+    <button onclick="getdata()">Get</button>
+    <hr>
+
+    <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
+        alt="" width="600px" id="myimg">
+
+    <p>Image URL : <span id="imgsrc"></span></p>
+    <script>
+        function setimg() {
+            let img = document.getElementById("myimg")
+            // img.setAttribute("width", "400px")
+            img.setAttribute("style", "border:12px groove red")
+        }
+        function removeimg() {
+            let img = document.getElementById("myimg")
+            img.removeAttribute("style")
+        }
+        function getdata() {
+            let img = document.getElementById("myimg")
+            let data = img.getAttribute("src")
+            document.getElementById("imgsrc").innerHTML = data
+        }
+    </script>
+</body>
+
+</html>
