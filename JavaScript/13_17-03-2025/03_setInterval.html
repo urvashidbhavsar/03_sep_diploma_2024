@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="time()">Click Here</button>
+
+    <p id="p1"></p>
+    <script>
+        function time() {
+            setInterval(() => {
+                // alert("Welcome to Home page")
+                document.getElementById("p1").innerHTML = "Welcome to Home Page"
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>

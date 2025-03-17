@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="n1" placeholder="Number 1">
+    <input type="text" name="" id="n2" placeholder="Number 2">
+    <button onclick="addition()">Add</button>
+
+    <p>Result is :
+        <span style="color: red;" id="res"></span>
+    </p>
+
+    <script>
+        function addition() {
+            let n1 = document.getElementById("n1")
+            let n2 = document.getElementById("n2")
+
+            let sum = Number(n1.value) + Number(n2.value)
+            document.getElementById("res").innerHTML = sum
+        }
+
+        console.log(Math.max(3, 2, 55, 4, 2, 6))
+        console.log(Math.min(3, 2, 55, 4, 2, 6))
+        console.log(Math.round(44.99));
+        console.log(Math.floor(23.22));
+        console.log(Math.ceil(23.22));
+        console.log(Math.random())
+        console.log(Math.sqrt(9))
+        console.log(Math.pow(5, 3));
+
+    </script>
+</body>
+
+</html>

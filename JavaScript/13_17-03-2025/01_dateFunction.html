@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let date = new Date()
+        document.writeln(`<b>Todays Whole Date&Time : </b> ${date}<br>`)
+
+        document.writeln(`<b>Date : </b> ${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()} <br>`)
+
+        document.writeln(`<b>Time : </b> ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} <br>`)
+
+        document.writeln(`<b>Day : </b> ${date.getDay()}<bR>`)
+
+        document.writeln(`<b>Whole Date : </b> ${date.toLocaleDateString()} <br>`)
+
+        document.writeln(`<b>Whole Time : </b> ${date.toLocaleTimeString()}`)
+
+    </script>
+</body>
+
+</html>
