@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let car = ["BMW", "Toyota", "Audi", "Alto", "Tata", "Nano"]
+        console.log(car);
+
+        // print single array 
+        console.log(car[0])
+        console.log(car[1])
+        console.log(car[2])
+        console.log(car[3])
+        console.log(car[4])
+
+        // use loop for print array value 
+        console.log("===== for loop ======");
+        for (let i = 0; i < car.length; i++) {
+            console.log(car[i])
+        }
+
+        // for of loop
+        console.log("===== for of loop ======");
+        for (let i of car) {
+            console.log(i)
+        }
+
+        // foreach loop
+        console.log("----- foreach loop -----");
+        car.forEach(c => {
+            console.log(c)
+        })
+
+
+    </script>
+</body>
+
+</html>
