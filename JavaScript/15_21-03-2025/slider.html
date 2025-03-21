@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            animation: fade 1s ease;
+        }
+
+        .sliders {
+            position: relative;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+        }
+
+        .btns {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            top: 250px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            margin: 0 20px;
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        button:active {
+            scale: 0.9;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sliders">
+        <div class="slide">
+            <img src="https://static.vecteezy.com/system/resources/previews/049/855/259/non_2x/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg"
+                alt="">
+        </div>
+        <div class="slide">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/330479541/GU/EA/XX/6461830/nature-wallpaper.jpg"
+                alt="">
+        </div>
+        <div class="slide">
+            <img src="https://cdn.magicdecor.in/com/2024/08/29110555/Drona-Mountain-Lake-House-Sunrise-Scenery-Wallpaper-Mural-710x450.jpg"
+                alt="">
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1448518340475-e3c680e9b4be?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJhbCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D"
+                alt="">
+        </div>
+        <div class="slide">
+            <img src="https://www.ideaainteriors.com/wp-content/uploads/2016/09/n2.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg"
+                alt="">
+        </div>
+
+        <div class="btns">
+            <button onclick="changeimg(-1)">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button onclick="changeimg(1)">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let index = 0;
+        slidechange(index)
+        function changeimg(x) {
+            slidechange(index += x)
+        }
+
+        setInterval(() => {
+            changeimg(1)
+        }, 3000);
+
+        function slidechange(n) {
+            let slides = document.querySelectorAll('.slide');
+
+            // right move
+            if (n === slides.length) {
+                index = 0;
+            }
+            // left move
+            if (n < 0) {
+                index = slides.length - 1;
+            }
+
+            slides.forEach(slide => {
+                slide.style.display = 'none';
+            });
+            slides[index].style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
