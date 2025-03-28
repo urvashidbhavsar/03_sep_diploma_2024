@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// nesting
+.nav {
+    background-color: salmon;
+
+    ul {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+
+        li {
+            padding: 10px;
+
+            a {
+                color: white;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.mydiv {
+    width: 400px;
+    border: 10px solid black;
+    overflow: hidden;
+
+    &:hover img {
+        scale: 1.1;
+    }
+
+    img {
+        max-width: 100%;
+        vertical-align: middle;
+        transition: 0.5s ease;
+    }
+}

@@ -1,0 +1,20 @@
+// mixins create for repeated property value which is used for reused
+// create a bunch of code
+.borders {
+    border-top: 3px dashed blue;
+    border-bottom: 5px solid red;
+    color: white;
+    padding: 20px;
+}
+
+.title1 {
+    font-size: 50px;
+    background-color: seagreen;
+    .borders()
+}
+
+.title2 {
+    font-size: 45px;
+    background-color: navy;
+    .borders()
+}
