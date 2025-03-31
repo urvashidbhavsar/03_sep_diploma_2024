@@ -1,0 +1,17 @@
+@mobscreen :~"(max-width:576px)";
+@lmobscreen :~"(min-width:576px)";
+@tabscreen :~"(min-width:768px)";
+
+.mydiv {
+    @media @mobscreen {
+        color: blue;
+    }
+
+    @media @lmobscreen {
+        color: purple;
+    }
+
+    @media @tabscreen {
+        color: red;
+    }
+}
