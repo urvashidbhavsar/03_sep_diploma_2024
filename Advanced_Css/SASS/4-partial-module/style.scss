@@ -1,0 +1,10 @@
+// add partial file
+@use 'variable.scss';
+
+.mydiv {
+    width: variable.$width;
+    background-color: variable.$bgcolor;
+    color: variable.$white;
+    padding: variable.$p-1;
+    border: variable.$b-1 solid black;
+}

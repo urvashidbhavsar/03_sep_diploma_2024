@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+}
+
+.overlay {
+  margin: auto;
+  border: 2px solid black;
+  width: 400px;
+  position: relative;
+}
+.overlay:hover .overlay-text {
+  scale: 1;
+}
+.overlay img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.overlay .overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: grid;
+  place-content: center;
+  scale: 0;
+  transition: 1s ease all;
+}
+.overlay .overlay-text h1 a {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

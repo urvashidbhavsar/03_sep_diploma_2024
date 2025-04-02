@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+}
+
+// create a block for inherit value
+%abvalue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+%contentCenter {
+    display: grid;
+    place-content: center;
+}
+
+// ======================================================
+.overlay {
+    margin: auto;
+    border: 2px solid black;
+    width: 400px;
+    position: relative;
+
+    &:hover .overlay-text {
+        scale: 1;
+    }
+
+    img {
+        max-width: 100%;
+        vertical-align: middle;
+    }
+
+    .overlay-text {
+        @extend %abvalue;
+        background-color: rgba(0, 0, 0, 0.7);
+        @extend %contentCenter;
+        scale: 0;
+        transition: 1s ease all;
+
+        h1 {
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// =============================================================
+.overlay1 {
+    margin: 20px auto;
+    border: 2px solid black;
+    width: 400px;
+    position: relative;
+
+    &:hover .overlay-text {
+        transform: scaleX(1);
+    }
+
+    img {
+        max-width: 100%;
+        vertical-align: middle;
+    }
+
+    .overlay-text {
+        @extend %abvalue;
+        background-color: rgba(0, 0, 0, 0.7);
+        @extend %contentCenter;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: 1s ease all;
+
+        h1 {
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}

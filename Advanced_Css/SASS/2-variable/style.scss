@@ -1,0 +1,12 @@
+$width: 400px;
+$color: #123ccc;
+$border: 3px;
+$text-color: #ffffff;
+
+div {
+    width: $width;
+    background-color: $color;
+    border: $border solid $color;
+    color: $text-color;
+    padding: 20px;
+}
