@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/tailwindcss">
+        @theme {
+            --color-clifford: #da373d;
+          }
+    </style>
+</head>
+
+<body>
+    <section class="bg-slate-200">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center py-2 gap-3 flex-col sm:flex-col lg:flex-row">
+                <p class="text-xs">
+                    Welcome to Farmie, we hope you will enjoy our products and have good experience
+                </p>
+                <ul class="flex flex-col sm:flex-col lg:flex-row gap-y-2 sm:gap-y-2 lg:gap-x-8 ">
+                    <li>
+                        <a href="" class="text-xs hover:text-green-500 duration-[0.5s] ease-linear">Email:
+                            infodeercreative@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="" class="text-xs hover:text-green-500 duration-[0.5s] ease-linear">Call Us: +84 223
+                            9000</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <header class="">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <h1 class="text-5xl uppercase"><span class="text-green-500">Far</span>mie</h1>
+                <ul id="nav" class="gap-7 lg:flex hidden"></ul>
+                <div class="lg:hidden block">
+                    <button class="bg-blue-600 p-2 text-white">Menu</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        let menu = document.getElementById("nav");
+        let menu_list = [
+            { path: "index.html", pathname: "Home" },
+            { path: "index.html", pathname: "About" },
+            { path: "index.html", pathname: "Pages" },
+            { path: "index.html", pathname: "Our Product" },
+            { path: "index.html", pathname: "Farming Practise" },
+            { path: "index.html", pathname: "News" },
+            { path: "index.html", pathname: "Contact" },
+            { path: "index.html", pathname: "🔎" },
+            { path: "index.html", pathname: "🛒" },
+        ]
+
+        menu_list.forEach(items => {
+            menu.innerHTML += `
+                <li><a href=${items.path} class="text-slate-700 hover:text-green-500">${items.pathname}</a></li>
+            `
+        })
+    </script>
+</body>
+
+</html>
